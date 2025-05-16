@@ -1,0 +1,339 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --success-color: #2ecc71;
+  --danger-color: #e74c3c;
+  --warning-color: #f39c12;
+  --border-color: #ddd;
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --card-bg: #fff;
+  --window-bg: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.window {
+  background-color: var(--window-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.window.hidden {
+  display: none;
+}
+
+.window-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 20px;
+}
+
+.window-header h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.window-content {
+  padding: 20px;
+}
+
+.connection-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.port-select {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.connect-btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.connect-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.status-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.status-disconnected {
+  background-color: var(--danger-color);
+}
+
+.status-connected {
+  background-color: var(--success-color);
+}
+
+.info-panel {
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.datetime-display {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: monospace;
+}
+
+.datetime-display div {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.settings-display {
+  font-size: 16px;
+}
+
+.settings-display div {
+  margin: 8px 0;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.value-large {
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.control-panel {
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.control-group {
+  margin-bottom: 15px;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.data-card {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--card-bg) 0%, #f8f9fa 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.pulse {
+  animation: pulse 1s infinite;
+  color: var(--warning-color) !important;
+}
+
+.value-large {
+  font-size: 28px;
+  margin: 10px 0;
+  color: var(--primary-color);
+}
+
+.data-card h3::before {
+  content: "⚡";
+  margin-right: 8px;
+}
+
+.control-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--success-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.window-switch-btn {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.window-switch-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Styles spécifiques à la simulation */
+.simulation-panel {
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.simulation-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#start-simulation-btn {
+  background-color: var(--success-color);
+  color: white;
+}
+
+#stop-simulation-btn {
+  background-color: var(--danger-color);
+  color: white;
+}
+
+.simulation-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.simulation-status {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#simulation-speed {
+  width: 100%;
+  margin: 10px 0;
+}
+
+#speed-value {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}

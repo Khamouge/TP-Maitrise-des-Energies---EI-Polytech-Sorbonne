@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrôle RD6012</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Fenêtre de connexion et monitoring -->
+    <div class="window" id="monitoring-window">
+      <div class="window-header">
+        <h2>Monitoring RD6012</h2>
+      </div>
+      <div class="window-content">
+        <div class="connection-panel">
+          <select id="port-select" class="port-select">
+            <option value="">Sélectionnez un port</option>
+          </select>
+          <button id="connect-btn" class="connect-btn">Connecter</button>
+          <div id="status-indicator" class="status-indicator status-disconnected"></div>
+        </div>
+
+        <div class="data-grid">
+          <div class="data-card">
+            <h3>Tension sortie</h3>
+            <div id="voltage-display" class="value-large">0.00 V</div>
+          </div>
+          <div class="data-card">
+            <h3>Courant sortie</h3>
+            <div id="current-display" class="value-large">0.00 A</div>
+          </div>
+          <div class="data-card">
+            <h3>Puissance</h3>
+            <div id="power-display" class="value-large">0.00 W</div>
+          </div>
+          <div class="data-card">
+            <h3>Mode</h3>
+            <div id="mode-display" class="value-large">--</div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button id="open-control-btn" class="window-switch-btn">Ouvrir le contrôle</button>
+          <button id="open-graph-btn" class="window-switch-btn">Ouvrir les graphiques</button>
+          <button id="open-simulation-btn" class="window-switch-btn">Simulation PV</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fenêtre de contrôle (cachée initialement) -->
+    <div class="window hidden" id="control-window">
+      <div class="window-header">
+        <h2>Contrôle RD6012</h2>
+      </div>
+      <div class="window-content">
+        <div class="control-panel">
+          <div class="control-group">
+            <label for="voltage-set">Tension (V):</label>
+            <input type="number" id="voltage-set" step="0.1" min="0" max="60">
+          </div>
+          <div class="control-group">
+            <label for="current-set">Courant (A):</label>
+            <input type="number" id="current-set" step="0.1" min="0" max="12">
+          </div>
+          <div class="control-group">
+            <label for="output-toggle">Activer la sortie:</label>
+            <label class="switch">
+              <input type="checkbox" id="output-toggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <button id="open-monitoring-btn" class="window-switch-btn">Retour au monitoring</button>
+      </div>
+    </div>
+
+    <!-- Fenêtre graphique (cachée initialement) -->
+    <div class="window hidden" id="graph-window">
+      <div class="window-header">
+        <h2>Graphiques RD6012</h2>
+      </div>
+      <div class="window-content">
+        <div class="chart-container">
+          <canvas id="voltageChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <canvas id="currentChart"></canvas>
+        </div>
+        <button id="open-monitoring-btn2" class="window-switch-btn">Retour au monitoring</button>
+      </div>
+    </div>
+
+    <!-- Fenêtre simulation PV (cachée initialement) -->
+    <div class="window hidden" id="simulation-window">
+      <div class="window-header">
+        <h2>Simulation Photovoltaïque</h2>
+      </div>
+      <div class="window-content">
+        <div class="simulation-panel">
+          <div class="control-group">
+            <label for="csv-file">Fichier JSON de simulation:</label>
+            <input type="file" id="csv-file" accept=".json,.JSON">
+          </div>
+          <div class="control-group">
+            <label>Vitesse de simulation: 1x (fixe)</label>
+          </div>
+          <div class="button-group">
+            <button id="start-simulation-btn" class="simulation-btn">Démarrer</button>
+            <button id="stop-simulation-btn" class="simulation-btn" disabled>Arrêter</button>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="simulationChart"></canvas>
+        </div>
+
+        <div class="simulation-status">
+          <div>Progression: <span id="simulation-progress">0%</span></div>
+          <div>Temps écoulé: <span id="simulation-time">00:00</span></div>
+          <div>Point actuel: <span id="simulation-point">0/0</span></div>
+        </div>
+
+        <button id="open-monitoring-btn3" class="window-switch-btn">Retour au monitoring</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
