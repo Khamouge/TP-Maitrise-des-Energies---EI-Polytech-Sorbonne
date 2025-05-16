@@ -9,7 +9,7 @@ Un module solaire transforme l'énergie solaire en énergie électrique (tension
 ```mermaid
 graph LR
 A[Module *PV] ---> B[Micro-onduleur]
-B ---> C[Appareils Electrique]
+B ---> C[Appareils Electriques]
 ```
 
 **PV : photovoltaïque*
