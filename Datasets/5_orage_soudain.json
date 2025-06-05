@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "description": "5 orage soudain",
+    "description": "5 orage soudain (modified)",
     "sampling_interval_s": 1,
     "duration_s": 20,
     "unit_voltage": "V",
@@ -52,81 +52,81 @@
     },
     {
       "time": 7,
-      "voltage": 22,
+      "voltage": 25,
       "current": 3.2,
-      "power": 70.4
+      "power": 80.0
     },
     {
       "time": 8,
-      "voltage": 18,
+      "voltage": 25,
       "current": 2.3,
-      "power": 41.4
+      "power": 57.5
     },
     {
       "time": 9,
-      "voltage": 14,
-      "current": 1.4,
-      "power": 19.599999999999998
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 10,
-      "voltage": 10,
-      "current": 0.5,
-      "power": 5.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 11,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 12,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 13,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 14,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 15,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 16,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 17,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 18,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     },
     {
       "time": 19,
-      "voltage": 10,
-      "current": 0.1,
-      "power": 1.0
+      "voltage": 25,
+      "current": 1.8,
+      "power": 45.0
     }
   ]
 }

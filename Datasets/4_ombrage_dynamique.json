@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "description": "4 ombrage dynamique",
+    "description": "4 ombrage dynamique (modified)",
     "sampling_interval_s": 1,
     "duration_s": 20,
     "unit_voltage": "V",
@@ -12,7 +12,7 @@
       "time": 0,
       "voltage": 30,
       "current": 4.76,
-      "power": 142.92
+      "power": 142.8
     },
     {
       "time": 1,
@@ -24,7 +24,7 @@
       "time": 2,
       "voltage": 30,
       "current": 3.98,
-      "power": 119.36
+      "power": 119.4
     },
     {
       "time": 3,
@@ -36,13 +36,13 @@
       "time": 4,
       "voltage": 30,
       "current": 4.87,
-      "power": 146.03
+      "power": 146.1
     },
     {
       "time": 5,
       "voltage": 30,
       "current": 2.02,
-      "power": 60.68
+      "power": 60.6
     },
     {
       "time": 6,
@@ -54,79 +54,79 @@
       "time": 7,
       "voltage": 30,
       "current": 2.85,
-      "power": 85.46
+      "power": 85.5
     },
     {
       "time": 8,
       "voltage": 30,
       "current": 2.9,
-      "power": 86.9
+      "power": 87.0
     },
     {
       "time": 9,
       "voltage": 30,
       "current": 3.41,
-      "power": 102.32
+      "power": 102.3
     },
     {
       "time": 10,
       "voltage": 30,
       "current": 3.14,
-      "power": 94.32
+      "power": 94.2
     },
     {
       "time": 11,
       "voltage": 30,
       "current": 4.45,
-      "power": 133.63
+      "power": 133.5
     },
     {
       "time": 12,
       "voltage": 30,
       "current": 3.76,
-      "power": 112.83
+      "power": 112.8
     },
     {
       "time": 13,
       "voltage": 30,
       "current": 3.12,
-      "power": 93.65
+      "power": 93.6
     },
     {
       "time": 14,
       "voltage": 30,
       "current": 3.44,
-      "power": 103.32
+      "power": 103.2
     },
     {
       "time": 15,
       "voltage": 30,
       "current": 3.33,
-      "power": 100.01
+      "power": 99.9
     },
     {
       "time": 16,
       "voltage": 30,
       "current": 4.49,
-      "power": 134.82
+      "power": 134.7
     },
     {
       "time": 17,
       "voltage": 30,
       "current": 2.79,
-      "power": 83.85
+      "power": 83.7
     },
     {
       "time": 18,
       "voltage": 30,
       "current": 3.31,
-      "power": 99.39
+      "power": 99.3
     },
     {
       "time": 19,
       "voltage": 30,
       "current": 2.15,
-      "power": 64.38
+      "power": 64.5
     }
   ]
 }

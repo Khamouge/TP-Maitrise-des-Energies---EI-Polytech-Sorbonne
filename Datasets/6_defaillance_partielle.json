@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "description": "6 defaillance partielle",
+    "description": "6 defaillance partielle (modified)",
     "sampling_interval_s": 1,
     "duration_s": 20,
     "unit_voltage": "V",
@@ -46,87 +46,87 @@
     },
     {
       "time": 6,
-      "voltage": 24,
+      "voltage": 25,
       "current": 5.0,
-      "power": 120.0
+      "power": 125.0
     },
     {
       "time": 7,
-      "voltage": 23,
+      "voltage": 25,
       "current": 5.0,
-      "power": 115.0
+      "power": 125.0
     },
     {
       "time": 8,
-      "voltage": 22,
+      "voltage": 25,
       "current": 5.0,
-      "power": 110.0
+      "power": 125.0
     },
     {
       "time": 9,
-      "voltage": 21,
+      "voltage": 25,
       "current": 5.0,
-      "power": 105.0
+      "power": 125.0
     },
     {
       "time": 10,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 11,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 12,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 13,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 14,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 15,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 16,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 17,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 18,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     },
     {
       "time": 19,
-      "voltage": 20,
+      "voltage": 25,
       "current": 5.0,
-      "power": 100.0
+      "power": 125.0
     }
   ]
 }
